@@ -29,7 +29,7 @@ unique samples=1387 byte-identical=1364 same-error=23
 
 | gate | result | reproduce |
 |---|---|---|
-| G1 upstream tests | 371 passed, 448 subtests, 0 failed | `cd /tmp/jp2 && PYTHONPATH=$PWD/src python -m pytest tests.py property_tests.py -q` |
+| G1 upstream tests | 371 passed, 448 subtests, 0 failed | `cd /path/to/python-json-patch-1.47 && PYTHONPATH=/path/to/jsonpatch-apply-opt-lab/src python -m pytest tests.py property_tests.py -q` |
 | G2 differential | 1,387 unique, 0 byte mismatches | `python tests/test_diff.py` |
 | G3 median speedup | 2.126x (≥1.15x) | `python benchmark/bench.py --impl both` |
 | G3b real corpus | 1.371x (≥1.15x) | same command, `real-corpus` row |
@@ -43,7 +43,7 @@ Only CPython 3.12.3 exists on this machine; 3.10/3.11 are not installed, so no c
 ```bash
 python3 -m venv .venv && .venv/bin/pip install jsonpatch==1.47 pytest
 .venv/bin/python tests/test_diff.py && .venv/bin/python benchmark/bench.py --impl both
-git -C /tmp/json-patch apply --check "$PWD/patch.diff"   # after cloning upstream 1.47
+cd /path/to/python-json-patch-1.47 && git apply --check /path/to/jsonpatch-apply-opt-lab/patch.diff
 ```
 
 ## Environment
