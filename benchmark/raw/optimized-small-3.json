@@ -1,0 +1,1 @@
+{"doc_bytes": 3895, "impl": "optimized", "ops": 10, "reps": 20, "sample": 3, "scale": "small", "seconds_per_call": 0.0001620857510715723, "seed": 20261118, "timer": "time.perf_counter"}

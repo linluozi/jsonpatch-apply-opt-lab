@@ -1,0 +1,79 @@
+{
+  "environment": {
+    "command": "benchmark/bench.py --impl baseline",
+    "cpu": "AMD EPYC 7K62 48-Core Processor",
+    "cpu_count": 4,
+    "mem_total_kb": 3812564,
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "samples": 7,
+    "seed": 20261118,
+    "timestamp": "2026-11-17T20:09:06+00:00",
+    "warmup": 3
+  },
+  "impl": "baseline",
+  "module_file": "/tmp/jpvenv/lib/python3.12/site-packages/jsonpatch.py",
+  "results": [
+    {
+      "cases": null,
+      "doc_bytes": 3895,
+      "impl": "baseline",
+      "max_seconds": 0.0003349521663039923,
+      "median_seconds": 0.00031252102926373484,
+      "min_seconds": 0.00030630934052169325,
+      "ops": 10,
+      "p25_seconds": 0.00030662594363093374,
+      "p75_seconds": 0.0003161884844303131,
+      "relative_stdev": 0.03225945138529513,
+      "samples": 7,
+      "scale": "small",
+      "stdev_seconds": 1.0081756950415851e-05
+    },
+    {
+      "cases": null,
+      "doc_bytes": 129891,
+      "impl": "baseline",
+      "max_seconds": 0.008541339891962707,
+      "median_seconds": 0.007162775960750878,
+      "min_seconds": 0.00704941269941628,
+      "ops": 50,
+      "p25_seconds": 0.007054279209114611,
+      "p75_seconds": 0.0075755794532597065,
+      "relative_stdev": 0.07495647996734753,
+      "samples": 7,
+      "scale": "medium",
+      "stdev_seconds": 0.0005368964728126217
+    },
+    {
+      "cases": null,
+      "doc_bytes": 1059186,
+      "impl": "baseline",
+      "max_seconds": 0.06199509836733341,
+      "median_seconds": 0.058760116808116436,
+      "min_seconds": 0.056448761373758316,
+      "ops": 162,
+      "p25_seconds": 0.0570682967081666,
+      "p75_seconds": 0.06121806800365448,
+      "relative_stdev": 0.03551209081717598,
+      "samples": 7,
+      "scale": "large",
+      "stdev_seconds": 0.0020866946045177
+    },
+    {
+      "cases": 59,
+      "doc_bytes": null,
+      "impl": "baseline",
+      "max_seconds": 1.4462271484278016e-05,
+      "median_seconds": 1.3361069358001321e-05,
+      "min_seconds": 1.0969432986388772e-05,
+      "ops": null,
+      "p25_seconds": 1.288405856338598e-05,
+      "p75_seconds": 1.386827710321394e-05,
+      "relative_stdev": 0.08235457706399119,
+      "samples": 7,
+      "scale": "real-corpus",
+      "stdev_seconds": 1.1003452161008511e-06
+    }
+  ],
+  "version": "1.47"
+}

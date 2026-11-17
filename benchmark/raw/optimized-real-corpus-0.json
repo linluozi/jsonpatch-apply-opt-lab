@@ -1,0 +1,1 @@
+{"cases": 59, "impl": "optimized", "reps": 1, "sample": 0, "scale": "real-corpus", "seconds_per_call": 0.00042284466326236725, "seconds_per_case": 7.166858699362157e-06, "seed": 20261118, "timer": "time.perf_counter"}
